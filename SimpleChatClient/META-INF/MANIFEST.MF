@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SimpleChatClient
+Bundle-SymbolicName: SC2;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: scc.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true
+Bundle-ClassPath: icons/,
+ .
