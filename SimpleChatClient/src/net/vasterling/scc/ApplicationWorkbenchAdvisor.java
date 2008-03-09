@@ -1,4 +1,4 @@
-package scc;
+package net.vasterling.scc;
 
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchAdvisor;

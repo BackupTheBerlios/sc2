@@ -1,4 +1,4 @@
-package simplechatclient;
+package net.vasterling.scc;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.ui.application.ActionBarAdvisor;

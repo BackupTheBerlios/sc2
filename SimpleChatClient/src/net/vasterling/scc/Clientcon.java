@@ -1,4 +1,4 @@
-package scc;
+package net.vasterling.scc;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

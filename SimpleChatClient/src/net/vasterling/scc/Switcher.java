@@ -1,4 +1,4 @@
-package scc;
+package net.vasterling.scc;
 
 class Switcher {
 

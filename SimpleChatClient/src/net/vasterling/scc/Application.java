@@ -1,4 +1,4 @@
-package scc;
+package net.vasterling.scc;
 
 import org.eclipse.core.runtime.IPlatformRunnable;
 

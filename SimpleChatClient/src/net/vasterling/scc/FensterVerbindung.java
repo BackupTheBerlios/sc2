@@ -1,4 +1,4 @@
-package scc;
+package net.vasterling.scc;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;

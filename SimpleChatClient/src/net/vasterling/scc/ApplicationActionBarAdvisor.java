@@ -1,4 +1,4 @@
-package simplechatclient;
+package net.vasterling.scc;
 
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.ui.IWorkbenchWindow;
