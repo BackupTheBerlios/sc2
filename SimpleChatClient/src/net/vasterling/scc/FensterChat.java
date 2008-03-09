@@ -235,7 +235,7 @@ public class FensterChat {
 		// tip.setText("Balloon Title goes here.");
 		// tip.setLocation(100,100);
 
-		getTrayItem().setToolTipText(s);
+		makeTooltip(s);
 
 		// getTrayItem().getToolTip().setVisible(true);
 
@@ -312,41 +312,18 @@ public class FensterChat {
 		return trayItem;
 	}
 
-	private void makeTooltip() {
+	private void makeTooltip(String s) {
 
-		Display display = new Display();
-		Shell shell = new Shell(display);
-		Image image = null;
+		Shell shell = getShell();
+		
 		final ToolTip tip = new ToolTip(shell, SWT.BALLOON | SWT.ICON_INFORMATION);
-		tip.setMessage("Here is a message for the user. When the message is too long it wraps. I should say something cool but nothing comes to my mind.");
-		Tray tray = display.getSystemTray();
-		if (tray != null) {
-			TrayItem item = new TrayItem(tray, SWT.NONE);
-			image = new Image(display, "Info.gif");
-			item.setImage(image);
-			tip.setText("Notification from a tray item");
-			item.setToolTip(tip);
-		} else {
-			tip.setText("Notification from anywhere");
-			tip.setLocation(400, 400);
-		}
-		Button button = new Button(shell, SWT.PUSH);
-		button.setText("Press for balloon tip");
-		button.addListener(SWT.Selection, new Listener() {
-			public void handleEvent(Event event) {
-				tip.setVisible(true);
-			}
-		});
-		button.pack();
-		shell.setBounds(50, 50, 300, 200);
-		shell.open();
-		while (!shell.isDisposed()) {
-			if (!display.readAndDispatch())
-				display.sleep();
-		}
-		if (image != null)
-			image.dispose();
-		display.dispose();
+		
+		tip.setMessage(s);
+
+		getTrayItem().setToolTip(tip);
+		
+		tip.setVisible(true);
+		
 	}
 
 	public org.eclipse.swt.widgets.Shell getShell() {
