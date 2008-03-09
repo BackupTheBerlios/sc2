@@ -7,16 +7,16 @@
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
-               class="net.vasterling.scc.Application">
+               class="net.vasterling.sc2.Application">
          </run>
       </application>
    </extension>
    <extension
          point="org.eclipse.ui.perspectives">
       <perspective
-            class="simpleChatClient.PerspectiveFactory1"
-            id="SimpleChatClient.perspective1"
-            name="SimpleChatClient.perspective1"/>
+            class="net.vasterling.sc2.Perspective"
+            id="SimpleChatClient.perspective"
+            name="SimpleChatClient.perspective"/>
    </extension>
    <extension
          id="product"

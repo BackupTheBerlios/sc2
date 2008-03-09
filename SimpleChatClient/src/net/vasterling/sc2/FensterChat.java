@@ -1,6 +1,8 @@
-package net.vasterling.scc;
+package net.vasterling.sc2;
 
 import java.io.PrintWriter;
+
+import net.vasterling.sc2.util.Resources;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
@@ -9,7 +11,6 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
@@ -123,7 +124,7 @@ public class FensterChat {
 		toolBar = new ToolBar(getShell(), SWT.FLAT | SWT.WRAP | SWT.RIGHT);
 
 		ToolItem buttonInfo = new ToolItem(toolBar, SWT.PUSH);
-		Image image = new Image(getShell().getDisplay(), FensterChat.class.getResourceAsStream("Info.gif"));
+		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
 		buttonInfo.setImage(image);
 
 		buttonInfo.addSelectionListener(new SelectionListener() {
@@ -139,7 +140,7 @@ public class FensterChat {
 		});
 
 		ToolItem buttonHilfe = new ToolItem(toolBar, SWT.PUSH);
-		image = new Image(getShell().getDisplay(), FensterChat.class.getResourceAsStream("help.gif"));
+		image = Resources.getImage(getShell().getDisplay(), "help.gif");
 		buttonHilfe.setImage(image);
 
 		buttonHilfe.addSelectionListener(new SelectionListener() {
@@ -264,7 +265,7 @@ public class FensterChat {
 
 	private void initTray() {
 
-		Image image = new Image(getShell().getDisplay(), FensterChat.class.getResourceAsStream("Info.gif"));
+		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
 		tray = getShell().getDisplay().getSystemTray();
 		if (tray != null) {
 			trayItem = new TrayItem(tray, SWT.NONE);

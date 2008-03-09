@@ -1,4 +1,4 @@
-package net.vasterling.scc;
+package net.vasterling.sc2;
 
 import org.eclipse.ui.IPageLayout;
 import org.eclipse.ui.IPerspectiveFactory;

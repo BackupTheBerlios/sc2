@@ -1,4 +1,4 @@
-package net.vasterling.scc;
+package net.vasterling.sc2;
 
 import java.net.ServerSocket;
 import java.net.Socket;

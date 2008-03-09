@@ -1,4 +1,6 @@
-package net.vasterling.scc;
+package net.vasterling.sc2;
+
+import net.vasterling.sc2.util.Resources;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
@@ -173,7 +175,7 @@ public class FensterVerbindung {
 		ToolBar toolBar = new ToolBar(getShell(), SWT.FLAT | SWT.WRAP | SWT.RIGHT);
 
 		ToolItem buttonInfo = new ToolItem(toolBar, SWT.PUSH);
-		Image image = new Image(getShell().getDisplay(), FensterChat.class.getResourceAsStream("Info.gif"));
+		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
 		buttonInfo.setImage(image);
 
 		buttonInfo.addSelectionListener(new SelectionListener() {
@@ -188,7 +190,7 @@ public class FensterVerbindung {
 		});
 
 		ToolItem buttonHilfe = new ToolItem(toolBar, SWT.PUSH);
-		image = new Image(getShell().getDisplay(), FensterChat.class.getResourceAsStream("help.gif"));
+		image = Resources.getImage(getShell().getDisplay(), "help.gif");
 		buttonHilfe.setImage(image);
 
 		buttonHilfe.addSelectionListener(new SelectionListener() {
