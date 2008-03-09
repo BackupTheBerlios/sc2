@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: SimpleChatClient
 Bundle-SymbolicName: SC2;singleton:=true
 Bundle-Version: 1.0.0
-Bundle-Activator: net.vasterling.sc2.Activator
+Bundle-Activator: net.vasterling.sc2.plugin.Activator
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime

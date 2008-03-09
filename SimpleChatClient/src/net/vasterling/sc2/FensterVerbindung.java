@@ -175,7 +175,7 @@ public class FensterVerbindung {
 		ToolBar toolBar = new ToolBar(getShell(), SWT.FLAT | SWT.WRAP | SWT.RIGHT);
 
 		ToolItem buttonInfo = new ToolItem(toolBar, SWT.PUSH);
-		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
+		Image image = Resources.getImage(getShell().getDisplay(), "icon.png");
 		buttonInfo.setImage(image);
 
 		buttonInfo.addSelectionListener(new SelectionListener() {

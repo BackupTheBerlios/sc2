@@ -1,4 +1,4 @@
-package net.vasterling.sc2;
+package net.vasterling.sc2.plugin;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

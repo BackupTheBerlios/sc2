@@ -7,7 +7,7 @@
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
-               class="net.vasterling.sc2.Application">
+               class="net.vasterling.sc2.plugin.Application">
          </run>
       </application>
    </extension>
@@ -23,7 +23,11 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="SC2.application"
-            name="SC2"/>
+            name="SC2">
+         <property
+               name="windowImages"
+               value="resources/icon.gif"/>
+      </product>
    </extension>
 
 </plugin>

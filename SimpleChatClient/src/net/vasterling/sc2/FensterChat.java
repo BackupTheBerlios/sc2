@@ -73,6 +73,7 @@ public class FensterChat {
 		gridDataTextEingabe.horizontalAlignment = GridData.FILL;
 
 		getShell().setText("Chatfenster");
+		getShell().setImage(Resources.getImage(getShell().getDisplay(), "icon.png"));
 		getShell().setLayout(gridLayout2);
 		gridLayout2.numColumns = 2;
 		gridLayout2.makeColumnsEqualWidth = false;
@@ -124,7 +125,7 @@ public class FensterChat {
 		toolBar = new ToolBar(getShell(), SWT.FLAT | SWT.WRAP | SWT.RIGHT);
 
 		ToolItem buttonInfo = new ToolItem(toolBar, SWT.PUSH);
-		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
+		Image image = Resources.getImage(getShell().getDisplay(), "icon.png");
 		buttonInfo.setImage(image);
 
 		buttonInfo.addSelectionListener(new SelectionListener() {
@@ -265,7 +266,7 @@ public class FensterChat {
 
 	private void initTray() {
 
-		Image image = Resources.getImage(getShell().getDisplay(), "Info.gif");
+		Image image = Resources.getImage(getShell().getDisplay(), "icon.png");
 		tray = getShell().getDisplay().getSystemTray();
 		if (tray != null) {
 			trayItem = new TrayItem(tray, SWT.NONE);

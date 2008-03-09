@@ -3,7 +3,23 @@
 
 <product name="SC2" id="SC2.product" application="SC2.application" useFeatures="false">
 
+
    <configIni use="default"/>
+
+   <launcherArgs>
+   </launcherArgs>
+
+   <windowImages i16="/SimpleChatClient/resources/icon.gif"/>
+
+
+   <launcher name="sc2">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/SimpleChatClient/resources/icon.bmp"/>
+      </win>
+   </launcher>
+
 
    <plugins>
       <plugin id="SC2"/>

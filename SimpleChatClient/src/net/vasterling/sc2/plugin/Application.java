@@ -1,4 +1,6 @@
-package net.vasterling.sc2;
+package net.vasterling.sc2.plugin;
+
+import net.vasterling.sc2.Clientcon;
 
 import org.eclipse.core.runtime.IPlatformRunnable;
 
